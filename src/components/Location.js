@@ -7,9 +7,7 @@ const Location = ({ name }) => {
   const dispatch = useDispatch();
   return (
     <NavLink to={`/${name}`} onClick={() => dispatch(fetchLocationData(name))}>
-      <div>
-        { name }
-      </div>
+      <div>{name}</div>
     </NavLink>
   );
 };
