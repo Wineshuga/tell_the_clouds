@@ -1,7 +1,17 @@
+import './App.css';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Home from './components/Home';
+import ViewLocation from './components/ViewLocation';
+
 function App() {
   return (
-    <div>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/:name" element={<ViewLocation />} />
+        <Route path="*" />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
