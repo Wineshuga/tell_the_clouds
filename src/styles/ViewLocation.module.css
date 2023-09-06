@@ -17,7 +17,7 @@
 
 .header h1,
 .weatherBox {
-  color: #ffffff;
+  color: #fff;
 }
 
 .weatherBox {
@@ -25,12 +25,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #EA4A88;
+  background-color: #ea4a88;
 }
 
 .weatherDetails > * {
   height: 5rem;
-  color: #ffffff;
+  color: #fff;
   display: flex;
   align-items: center;
   padding-left: 1rem;
@@ -38,6 +38,6 @@
 }
 
 .weatherDetails :nth-child(2),
-.weatherDetails :nth-child(4){
-  background-color: #EA4A88;
+.weatherDetails :nth-child(4) {
+  background-color: #ea4a88;
 }

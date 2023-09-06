@@ -8,9 +8,11 @@
 }
 
 body {
-  background-color: #D04379;
+  background-color: #d04379;
 }
 
-h1, p, ::placeholder {
+h1,
+p,
+::placeholder {
   font-family: 'lato', sans-serif;
 }
