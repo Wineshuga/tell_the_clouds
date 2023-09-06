@@ -48,9 +48,8 @@ const Home = () => {
       </header>
       <section className={styles.location_container}>
         {
-        (filteredAreas.length > 0 ? filteredAreas : adminAreas).map((item, index) => (
+        (filteredAreas.length > 0 ? filteredAreas : adminAreas).map((item) => (
           <Location
-            className={index % 2 === 0 ? styles['even-item'] : styles['odd-item']}
             key={item}
             name={item}
           />
