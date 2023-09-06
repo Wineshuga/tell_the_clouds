@@ -3,6 +3,8 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { fetchAdminAreas, searchAreas } from '../redux/weather/weatherSlice';
 import Location from './Location';
+import nigeria from '../images/nigeria.png';
+import styles from '../styles/Home.module.css';
 
 const Home = () => {
   const dispatch = useDispatch();
@@ -23,9 +25,18 @@ const Home = () => {
   };
 
   return (
-    <section>
-      <header>
-        <Link to="/"><h1>TellTheClouds</h1></Link>
+    <section className={styles.main}>
+      <header className={styles.header}>
+        <Link to="/">
+          <div className={styles.nav}>
+            <img
+              src={nigeria}
+              alt="nigeria map"
+              className={styles.nigeria_map}
+            />
+            <h1>TellTheClouds</h1>
+          </div>
+        </Link>
         <input
           type="search"
           name="search"
@@ -35,11 +46,17 @@ const Home = () => {
           onChange={(e) => handleChange(e)}
         />
       </header>
-      {
-        (filteredAreas.length > 0 ? filteredAreas : adminAreas).map((item) => (
-          <Location key={item} name={item} />
+      <section className={styles.location_container}>
+        {
+        (filteredAreas.length > 0 ? filteredAreas : adminAreas).map((item, index) => (
+          <Location
+            className={index % 2 === 0 ? styles['even-item'] : styles['odd-item']}
+            key={item}
+            name={item}
+          />
         ))
       }
+      </section>
     </section>
   );
 };
