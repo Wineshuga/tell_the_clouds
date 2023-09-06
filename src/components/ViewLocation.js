@@ -17,16 +17,17 @@ const ViewLocation = () => {
   return (
     <section>
       <div className={styles.header}>
+        <div className={styles.nav}>
+          <img
+            src={nigeria}
+            alt="nigeria map"
+            className={styles.nigeria_map}
+          />
+          <h1>TellTheClouds</h1>
+        </div>
+        {' '}
         <Link to="/">
-          <div className={styles.nav}>
-            <img
-              src={nigeria}
-              alt="nigeria map"
-              className={styles.nigeria_map}
-            />
-            <h1>TellTheClouds</h1>
-          </div>
-          {' '}
+          <h2> ← Back </h2>
         </Link>
       </div>
       <div className={styles.weatherBox}>

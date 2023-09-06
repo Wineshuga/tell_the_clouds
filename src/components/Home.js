@@ -1,6 +1,5 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
 import { fetchAdminAreas, searchAreas } from '../redux/weather/weatherSlice';
 import Location from './Location';
 import nigeria from '../images/nigeria.png';
@@ -27,16 +26,14 @@ const Home = () => {
   return (
     <section className={styles.main}>
       <header className={styles.header}>
-        <Link to="/">
-          <div className={styles.nav}>
-            <img
-              src={nigeria}
-              alt="nigeria map"
-              className={styles.nigeria_map}
-            />
-            <h1>TellTheClouds</h1>
-          </div>
-        </Link>
+        <div className={styles.nav}>
+          <img
+            src={nigeria}
+            alt="nigeria map"
+            className={styles.nigeria_map}
+          />
+          <h1>TellTheClouds</h1>
+        </div>
         <input
           type="search"
           name="search"
