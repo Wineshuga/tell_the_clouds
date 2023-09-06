@@ -1,7 +1,7 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 
 const apiKey = process.env.REACT_APP_WEATHER_API_KEY;
-const adminAreas = `http://dataservice.accuweather.com/locations/v1/adminareas/NG?apikey=${apiKey}`;
+const adminAreas = `https://dataservice.accuweather.com/locations/v1/adminareas/NG?apikey=${apiKey}`;
 
 export const fetchAdminAreas = createAsyncThunk('type/fetchAdminAreas', async () => {
   try {
@@ -56,7 +56,7 @@ const locationKeys = {
 export const fetchLocationData = createAsyncThunk('type/fetchLocationData', async (locationName) => {
   try {
     const secApiKey = process.env.REACT_APP_SEC_WEATHER_API_KEY;
-    const locationUrl = `http://dataservice.accuweather.com/forecasts/v1/daily/1day/${locationKeys[locationName]}?apikey=${secApiKey}`;
+    const locationUrl = `https://dataservice.accuweather.com/forecasts/v1/daily/1day/${locationKeys[locationName]}?apikey=${secApiKey}`;
 
     const fetchData = await fetch(locationUrl);
     const result = await fetchData.json();
