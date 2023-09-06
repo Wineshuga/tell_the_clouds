@@ -1,11 +1,18 @@
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import { Link, useParams } from 'react-router-dom';
+import { useEffect } from 'react';
 import styles from '../styles/ViewLocation.module.css';
 import nigeria from '../images/nigeria.png';
+import { fetchLocationData } from '../redux/weather/weatherSlice';
 
 const ViewLocation = () => {
   const { name } = useParams();
   const { weather } = useSelector((store) => store.weather);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchLocationData(name));
+  });
 
   return (
     <section>
