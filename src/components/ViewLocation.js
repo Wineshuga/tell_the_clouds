@@ -25,7 +25,6 @@ const ViewLocation = () => {
           />
           <h1>TellTheClouds</h1>
         </div>
-        {' '}
         <Link to="/">
           <h2> ← Back </h2>
         </Link>
