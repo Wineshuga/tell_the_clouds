@@ -26,15 +26,15 @@ const ViewLocation = () => {
           <h1>TellTheClouds</h1>
         </div>
         <Link to="/">
-          <h2> ← Back </h2>
+          <h3 className={styles.backBtn}> ← Back </h3>
         </Link>
       </div>
       <div className={styles.weatherBox}>
-        <h1>
+        <h3>
           Weather in
           {' '}
           { name}
-        </h1>
+        </h3>
       </div>
       <section className={styles.weatherDetails}>
         <p>{weather.text}</p>
