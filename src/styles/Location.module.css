@@ -1,0 +1,19 @@
+.location {
+  background-color: #EA4A88;
+  margin: 0.1rem;
+  text-align: center;
+  color: #ffffff;
+  max-width: 30rem;
+  font-size: 20px;
+  height: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 1024px) {
+  .location {
+    font-size: 32px;
+    height: 15rem;
+  }
+}
