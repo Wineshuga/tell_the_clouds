@@ -27,7 +27,7 @@
 
 # 📖 Tell the Clouds <a name="about-project"></a>
 
-**Tell the Clouds** is a weather app designed to provide users with up-to-date weather information for various states in Nigeria.
+**Tell the Clouds** is a weather app designed to provide users with up-to-date weather information for various states in Nigeria. Here's a [brief video](https://www.loom.com/share/351714b7ed2a41b39fec9b0f15c25186?sid=4fc1f0b9-70e2-446a-8ba9-d0738cc73e62) introducing you to the project.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -62,6 +62,11 @@ In order to run this project you need:
 
 - node
 - npm
+- [API Key](https://developer.accuweather.com/apis)
+**Note: To use API Key, add the following to your `.env` file:
+```
+REACT_APP_WEATHER_API_KEY = 'add-your-api-key-here'
+```
   
 ### Setup
 
@@ -136,7 +141,7 @@ If you like this project, please give this project star⭐.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank Microverse for inspiring this project and Nelson Sakwa for the original design idea on Behance.
+I would like to thank Microverse for inspiring this project and [Nelson Sakwa](https://www.behance.net/sakwadesignstudio) for the [original design idea](https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs)) on Behance.
 
 ## 📝 License <a name="license"></a>
 
