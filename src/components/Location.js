@@ -3,9 +3,12 @@ import { NavLink } from 'react-router-dom';
 import styles from '../styles/Location.module.css';
 
 const Location = ({ name }) => (
-  <NavLink to={`/${name}`}>
-    <div className={styles.location}><p>{name}</p></div>
-  </NavLink>
+  <div className={styles.location}>
+    <NavLink to={`/${name}`}>
+      <span className={styles.arrow}>→</span>
+    </NavLink>
+    <p>{name}</p>
+  </div>
 );
 
 Location.propTypes = {
