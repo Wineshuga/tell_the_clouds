@@ -25,11 +25,15 @@ h3 {
   font-size: 20px;
 }
 
+.backBtn {
+  text-align: center;
+  width: 2rem;
+}
+
 .backBtn:hover {
   color: #ea4a88;
   background-color: #fff;
-  padding: 0.3rem;
-  border-radius: 5px;
+  border-radius: 50%;
 }
 
 .weatherBox {

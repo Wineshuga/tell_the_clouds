@@ -17,6 +17,9 @@ const ViewLocation = () => {
   return (
     <section>
       <div className={styles.header}>
+        <Link to="/">
+          <h1 className={styles.backBtn}> &lt; </h1>
+        </Link>
         <div className={styles.nav}>
           <img
             src={nigeria}
@@ -25,9 +28,6 @@ const ViewLocation = () => {
           />
           <h1>TellTheClouds</h1>
         </div>
-        <Link to="/">
-          <h3 className={styles.backBtn}> ← Back </h3>
-        </Link>
       </div>
       <div className={styles.weatherBox}>
         <h3>
